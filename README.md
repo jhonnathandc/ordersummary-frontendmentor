@@ -1,15 +1,17 @@
-# NFT Preview Card - FrontEnd Mentor
+# Order Summary - FrontEnd Mentor
 
 This project is part of the challenges of [FrontEnd Mentor](https://www.frontendmentor.io/).
 
-[Access the website here.](https://nftpreview-frontendmentor.vercel.app/)
+Javascript was used to make some animations in SVG.
+
+[Access the website here.](https://ordersummary-frontendmentor.vercel.app/)
 <br>
 <br>
-[access the challenge on the FrontEnd Mentor here.](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+[Access the challenge on the FrontEnd Mentor here.](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 
 ## Demonstração
 
-![Wireframe - 1](https://user-images.githubusercontent.com/82620787/235288053-9179feed-ce48-4712-96ce-f4a5fb2d3bfb.png)
+![Wireframe - 1](https://user-images.githubusercontent.com/82620787/235556924-41e95c59-1568-4d07-9d2a-66049b0700e9.png)
 
 ## Mais Informações
 
@@ -17,10 +19,7 @@ It was built as proposed in the design, using:
 
 - HTML
 - CSS
-
-## Stack
-
-**Front-end:** HTML, CSS
+- JavaScript
 
 ## License
 
