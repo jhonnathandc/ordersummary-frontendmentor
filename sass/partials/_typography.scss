@@ -1,0 +1,32 @@
+@mixin type($size, $device) {
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+
+  // H1
+  @if ($size == h1 and $device == desktop) {
+    font-size: 2.8rem;
+    font-weight: 900;
+  } @else if ($size == h1 and $device == mobile) {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+
+  // B1
+  @else if ($size == b1 and $device == desktop) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+  } @else if ($size == b1 and $device == mobile) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+  }
+
+  // B2
+  @else if ($size == b2 and $device == desktop) {
+    font-size: 1.6rem;
+    font-weight: 900;
+  } @else if ($size == b2 and $device == mobile) {
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+}

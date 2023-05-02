@@ -1,0 +1,53 @@
+#music--inject-1 {
+  animation: animation-music 2s linear 0s infinite alternate;
+}
+
+#music_2--inject-1 {
+  animation: animation-music 2s linear .5s infinite alternate;
+}
+
+#music_3--inject-1 {
+  animation: animation-music 2s linear 1s infinite alternate;
+}
+
+#music_4--inject-1 {
+  animation: animation-music 2s linear 1.5s infinite alternate;
+}
+
+@keyframes animation-music {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(30px, -30px, 0px);
+  }
+}
+
+#star--inject-1 {
+  animation: animation-star 1s linear 0s infinite alternate;
+}
+
+#star_2--inject-1 {
+  animation: animation-star 1s linear .25s infinite alternate;
+}
+
+#star_3--inject-1 {
+  animation: animation-star 1s linear .5s infinite alternate;
+}
+
+#star_4--inject-1 {
+  animation: animation-star 1s linear .75s infinite alternate;
+}
+
+#star_5--inject-1 {
+  animation: animation-star 1s linear 1s infinite alternate;
+}
+
+@keyframes animation-star {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 20%;
+  }
+}

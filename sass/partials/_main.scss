@@ -1,0 +1,119 @@
+.main-bg {
+  background-color: $purple-light;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../assets/pattern-background-desktop.svg");
+    width: 100%;
+    height: 437px;
+    position: absolute;
+    top: 0;
+
+    @include responsive(xs) {
+      background-image: url("../../assets/pattern-background-mobile.svg");
+      height: 194px;
+    }
+  }
+
+  .card {
+    max-width: 450px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    position: relative;
+    z-index: 1;
+
+    @include responsive(xs) {
+      max-width: 327px;
+    }
+
+    .image {
+      svg {
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+
+    .content {
+      padding: 45px 48px;
+
+      @include responsive(xs) {
+        padding: 32px 24px;
+      }
+
+      h1 {
+        @include type(h1, desktop);
+        color: $blue-dark;
+        text-align: center;
+        margin-bottom: 17px;
+
+        @include responsive(xs) {
+          @include type(h1, mobile);
+          margin-bottom: 16px;
+        }
+      }
+
+      p {
+        @include type(b1, desktop);
+        color: $blue-light;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include responsive(xs) {
+          @include type(b1, mobile);
+          margin-bottom: 24px;
+        }
+      }
+
+      .plan {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        background-color: $white-ice;
+        padding: 25px 24px;
+        border-radius: 11px;
+        margin-bottom: 32px;
+
+        @include responsive(xs) {
+          padding: 16px;
+          margin-bottom: 24px;
+        }
+
+        .plan-name {
+          flex: 1;
+
+          .name {
+            @include type(b2, desktop);
+            color: $blue-dark;
+            margin-bottom: 3px;
+
+            @include responsive(xs) {
+              @include type(b2, mobile);
+            }
+          }
+
+          .price {
+            @include type(b1, desktop);
+            color: $blue-light;
+
+            @include responsive(xs) {
+              @include type(b1, mobile);
+            }
+          }
+        }
+      }
+
+      .btn-primary {
+        margin-bottom: 32px;
+
+        @include responsive(xs) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
