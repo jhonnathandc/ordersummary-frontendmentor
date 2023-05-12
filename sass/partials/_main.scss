@@ -9,50 +9,50 @@
     display: block;
     background-image: url("../../assets/pattern-background-desktop.svg");
     width: 100%;
-    height: 437px;
+    height: 43.7rem;
     position: absolute;
     top: 0;
 
     @include responsive(xs) {
       background-image: url("../../assets/pattern-background-mobile.svg");
-      height: 194px;
+      height: 19.4rem;
     }
   }
 
   .card {
-    max-width: 450px;
+    max-width: 45rem;
     background-color: $white;
-    border-radius: 20px;
-    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 2rem;
+    box-shadow: 0 4rem 4rem -2rem rgba(13, 48, 189, 0.151826);
     position: relative;
     z-index: 1;
 
     @include responsive(xs) {
-      max-width: 327px;
+      max-width: 32.7rem;
     }
 
     .image {
       svg {
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 2rem 2rem 0 0;
       }
     }
 
     .content {
-      padding: 45px 48px;
+      padding: 4.5rem 4.8rem;
 
       @include responsive(xs) {
-        padding: 32px 24px;
+        padding: 3.2rem 2.4rem;
       }
 
       h1 {
         @include type(h1, desktop);
         color: $blue-dark;
         text-align: center;
-        margin-bottom: 17px;
+        margin-bottom: 1.7rem;
 
         @include responsive(xs) {
           @include type(h1, mobile);
-          margin-bottom: 16px;
+          margin-bottom: 1.6rem;
         }
       }
 
@@ -60,27 +60,27 @@
         @include type(b1, desktop);
         color: $blue-light;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
 
         @include responsive(xs) {
           @include type(b1, mobile);
-          margin-bottom: 24px;
+          margin-bottom: 2.4rem;
         }
       }
 
       .plan {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 2rem;
 
         background-color: $white-ice;
-        padding: 25px 24px;
-        border-radius: 11px;
-        margin-bottom: 32px;
+        padding: 2.5rem 2.4rem;
+        border-radius: 1.1rem;
+        margin-bottom: 3.2rem;
 
         @include responsive(xs) {
-          padding: 16px;
-          margin-bottom: 24px;
+          padding: 1.6rem;
+          margin-bottom: 2.4rem;
         }
 
         .plan-name {
@@ -89,7 +89,7 @@
           .name {
             @include type(b2, desktop);
             color: $blue-dark;
-            margin-bottom: 3px;
+            margin-bottom: .3rem;
 
             @include responsive(xs) {
               @include type(b2, mobile);
@@ -108,10 +108,10 @@
       }
 
       .btn-primary {
-        margin-bottom: 32px;
+        margin-bottom: 3.2rem;
 
         @include responsive(xs) {
-          margin-bottom: 24px;
+          margin-bottom: 2.4rem;
         }
       }
     }
